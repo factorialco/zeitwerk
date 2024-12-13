@@ -537,7 +537,7 @@ module Zeitwerk
       Registry.register_autoload(self, abspath)
 
       # See why in the documentation of Zeitwerk::Registry.inceptions.
-      Registry.register_inception(cref.path, abspath, self) if %w[Actioncable FQL Changelog].include?(cref.cname.name)
+      Registry.register_inception(cref.path, abspath, self) if %w[ActionCable FQL Changelog].include?(cref.cname.name)
     end
 
     # @sig (Module, Symbol) -> String?
