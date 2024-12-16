@@ -540,7 +540,7 @@ module Zeitwerk
       # and we will only incept the manually defined namespaces for improved
       # performance
       if manual_incepted_namespaces.any?
-        if manual_incepted_namespaces.manual_incepted_namespaces.include?(cref.cname.name)
+        if manual_incepted_namespaces.include?(cref.cname.name)
           Registry.register_inception(cref.path, abspath, self)
         end
       else
